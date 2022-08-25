@@ -1,3 +1,12 @@
-name: Reusable_workflow
+name: Compliance
+
 on:
   workflow_call:
+
+jobs:
+  welcome:
+    name: Welcome
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello world
+        run: echo "hello world"
