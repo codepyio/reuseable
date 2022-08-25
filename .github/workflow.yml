@@ -1,0 +1,3 @@
+name: Reusable_workflow
+on:
+  workflow_call:
