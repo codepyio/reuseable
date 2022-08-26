@@ -8,6 +8,9 @@ on:
       AWS_SECRET_ACCESS_KEY:
         description: 'AWS_SECRET_ACCESS_KEY of the caller workflow'
         required: true
+      AWS_S3_BUCKET:
+        description: 'AWS_S3_BUCKET of the caller workflow'
+        required: true
 jobs:
   deploy:
     runs-on: ubuntu-latest
