@@ -1,6 +1,13 @@
 name: Deploy
 on:
   workflow_call:
+    secrets:
+      AWS_ACCESS_KEY_ID:
+        description: 'AWS_ACCESS_KEY_ID of the caller workflow'
+        required: true
+      AWS_SECRET_ACCESS_KEY:
+        description: 'AWS_SECRET_ACCESS_KEY of the caller workflow'
+        required: true
 jobs:
   deploy:
     runs-on: ubuntu-latest
